@@ -47,8 +47,8 @@ export const filmes = connection.define(
   }
 );
 
-function initTable() {
-  filmes.async();
+const initTable = async () =>{
+  await filmes.sync();
 }
 
 initTable();
