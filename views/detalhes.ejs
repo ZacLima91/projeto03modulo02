@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Cine Flex</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %> <%- include('./partials/nav.ejs') %>
+    <main>
+      <div class="containerFilme">
+        <div class="titleFilme">
+          <h1><%= filmesDetalhes.nome_filme %></h1>
+          <p>Sinopse:<%= filmesDetalhes.sinopse %></p>
+        </div>
+        <section class="containerDetalhes">
+          <div class="detalhes">
+            <img src="<%= filmesDetalhes.img %> " alt="" />
+          </div>
+          <div class="detalhes">
+            <p><strong>Diretor: </strong><%= filmesDetalhes.diretor %></p>
+            <p><strong>Ano: </strong><%= filmesDetalhes.ano %></p>
+            <p><strong>Duração: </strong><%= filmesDetalhes.duracao %> min</p>
+          </div>
+          <div class="containerTrailer">
+            <iframe <%=filmesDetalhes.iframe %>> </iframe>
+          </div>     
+        </section>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

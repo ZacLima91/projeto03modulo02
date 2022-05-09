@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Cine Flex</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %> <%- include('./partials/nav.ejs') %>
+    <% if (message != '') { %> <%- include('./partials/alert.ejs') %> <% } %>
+    <main>   
+      <div class="containerCadastro">
+        <form id="cadastro" method="post" action="/add">
+          <label for="nome_filme">Filme:</label>
+          <input
+            type="text"
+            id="nome_filme"
+            name="nome_filme"
+            placeholder="Filme"
+            required
+          />
+          <label for="diretor">Diretor:</label>
+          <input
+            type="text"
+            id="diretor"
+            name="diretor"
+            placeholder="Diretor"
+            required
+          />
+          <label for="sinopse">Sinopse:</label>
+          <input
+            type="text"
+            id="sinopse"
+            name="sinopse"
+            placeholder="Sinopse"
+            required
+          />
+          <label for="ano">Ano:</label>
+          <input type="number" id="ano" name="ano" placeholder="Ano" />
+          <label for="duracao">Duração:</label>
+          <input
+            type="text"
+            id="duracao"
+            name="duracao"
+            placeholder="Duracao"
+            required
+          />
+          <label for="img">Imagem:</label>
+          <input
+            type="text"
+            id="img"
+            name="img"
+            placeholder="Imagem"
+            required
+          />
+          <label for="iframe">Iframe:</label>
+          <input
+            type="text"
+            id="iframe"
+            name="iframe"
+            placeholder="Iframe"
+            required
+          />
+          <button type="submit"><strong>Adicionar</strong></button>
+        </form>
+      </div>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

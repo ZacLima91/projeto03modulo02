@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cine Flex</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %> <%- include('./partials/nav.ejs') %>
+    <main>
+      <% if (message != '') { %> <%- include('./partials/alert.ejs') %> <% } %>
+      <div class="container">
+        <% listFilmes.forEach(element => { %>
+        <a href="/detalhes/<%= element.id %> ">
+          <div class="card">
+            <div id="card_img">
+              <img src="<%= element.img %> " alt="" />
+            </div>
+            <div id="card_nome">
+              <p><%= element.nome_filme %></p>
+            </div>
+          </a>
+            <div id="opcaoCard">
+              <a href="/editar/<%= element.id %>" id="editar">Editar</a>
+              <a href="/deletar/<%= element.id %>" id="apagar">Apagar</a>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

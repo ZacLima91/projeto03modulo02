@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "MaybeCats";
+  src: url("../fonts/MaybeCats.otf");
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  background-color: #1c1e27;
+  background-image: url("../images/pinpng.com-captain-america-shield-png-3304169.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+
+header p {
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.856);
+  margin: 20px;
+}
+
+header p:hover {
+  transform: scale(1.1);
+}
+
+header a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgb(112, 7, 7);
+  height: 3rem;
+  padding: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+nav h1 {
+  visibility: hidden;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul li a span:hover {
+  transform: scale(1.1);
+  color: #1c1e27;
+}
+
+nav #search {
+  background-color: #fff;
+  position: relative;
+  float: right;
+  bottom: 2.3rem;
+  width: 300px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+nav #search input {
+  background: transparent;
+  position: relative;
+  bottom: 0.6rem;
+  width: 80%;
+  height: 96%;
+  border: 0 none;
+  outline: 0;
+  padding: 1rem;
+}
+nav #search button {
+  background-image: url("../images/search-icon.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 96%;
+  width: 18%;
+  border: 0 none;
+  outline: 0;
+  font-size: 18px;
+}
+
+.iconeMenu {
+  display: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85%;
+}
+.container {
+  background-color: #1c1e27;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+
+  width: 10rem;
+  height: 18rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+#card_img {
+  width: 100%;
+  height: 85%;
+}
+#card_img img {
+  width: 100%;
+  height: 100%;
+}
+
+#card_nome {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+#card_nome p {
+  color: #fff;
+}
+
+#opcaoCard{
+  width: 100%;
+  text-align: center;
+}
+
+.iconeCard {
+  position: relative;
+  background: none;
+  bottom: 18rem;
+  right: 0.8rem;
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+#hamburgerCard {
+  position: absolute;
+  float: right;
+  border-top: 3px solid rgb(189, 14, 14);
+  width: 20px;
+}
+
+#hamburgerCard::after,
+#hamburgerCard::before {
+  color: rgb(189, 14, 14);
+  display: block;
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: currentColor;
+  margin-top: 5px;
+}
+
+.message{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(55, 59, 59);
+  text-align: center;
+  top: 0;
+}
+
+#close{
+  background-color: azure;
+  color: brown;
+}
+
+.menuCard {
+  visibility: hidden;
+}
+
+.menuAcitve {
+  text-align: center;
+  position: relative;
+  bottom: 16rem;
+  left: 3rem;
+  background-color: rgba(255, 255, 255, 0.712);
+  border-radius: 4px;
+  width: 7rem;
+  height: 6rem;
+  visibility: hidden;
+  
+}
+
+.menuAcitve li {
+  padding: 0.4rem;
+}
+
+.menuAcitve li a {
+  text-decoration: none;
+  color: #1c1e27;
+}
+
+.containerFilme {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.containerDetalhes {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  margin: 2rem;
+}
+
+.detalhes {
+  margin: 0 1rem;
+}
+
+.containerTrailer iframe {
+  margin: 0 8rem;
+}
+
+.containerCadastro {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 34, 34);
+  border-radius: 4px;
+  height: 30rem;
+  width: 80%;
+}
+
+#cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+}
+
+#cadastro label{
+  color: white;
+  padding: 4px;
+  width: 60%;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+}
+
+#cadastro input {
+  color: black;
+  padding: 4px;
+  width: 60%;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+}
+
+
+#cadastro button {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 3rem;
+}
+
+footer {
+  height: 5%;
+  background-color: rgb(112, 7, 7);
+  text-align: center;
+}
+footer p{
+  padding-top: 2px;
+  color: #fff;
+}
+
+.modal-overlay {
+  background-color: #1c1e2783;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal {
+  margin: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  min-height: 300px;
+  background-color: rgba(49, 45, 45, 0.555);
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(107, 21, 21);
+  padding: 1rem;
+  color: #fff;
+}
+
+.modal-header a#close-modal-put {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-body {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-modal {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form-modal input {
+  width: 40rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border: solid 2px black;
+}
+
+.form-modal label {
+  padding-top: 0.5rem;
+}
+
+.form-modal button {
+  padding: 0.6rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  font-size: 1rem;
+  border: solid 1px rgb(105, 20, 20);
+  border-radius: 4px;
+  color: rgb(99, 25, 25);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-modal button:hover {
+  background-color: rgb(99, 25, 25);
+  color: #fff;
+}
+
+@media (max-width: 730px) {
+  header {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    height: 10rem;
+  }
+
+  #tituloMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav h1 {
+    visibility: visible;
+  }
+
+  .routers {
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    width: 100%;
+    height: 0px;
+    top: 10rem;
+    right: 0;
+    z-index: 10000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .active {
+    background-color: #fff;
+    visibility: visible;
+    height: 20%;
+  }
+
+  nav ul {
+    width: max-content;
+    float: right;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1rem;
+  }
+
+  nav ul li a {
+    color: #1c1e27;
+  }
+
+  nav #search {
+    bottom: 0;
+    float: left;
+    bottom: 0.2rem;
+  }
+
+  .iconeMenu {
+    position: relative;
+    bottom: 0.3rem;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+  }
+
+  #hamburger {
+    float: right;
+    border-top: 3px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 3px;
+    background: currentColor;
+    margin-top: 5px;
+  }
+
+  .iconeMenu:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 520px) {
+  nav #search {
+    width: 12rem;
+  }
+}
