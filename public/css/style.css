@@ -23,9 +23,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 50%;
+  
 }
 
 header p {
+  font-family: "MaybeCats", Arial, Helvetica, sans-serif;
   font-size: 60px;
   color: rgba(255, 255, 255, 0.856);
   margin: 20px;
@@ -400,6 +402,10 @@ footer p{
     display: none;
   }
 
+  header p{
+    font-family: "MaybeCats", Arial, Helvetica, sans-serif;
+  }
+
   nav {
     display: flex;
     height: 10rem;
@@ -411,10 +417,14 @@ footer p{
     align-items: center;
     width: 100%;
     height: 100%;
+    
   }
 
   nav h1 {
     visibility: visible;
+    font-family: "MaybeCats", Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 3rem;
   }
 
   .routers {
@@ -469,6 +479,7 @@ footer p{
   }
 
   #hamburger {
+    color: #fff;
     float: right;
     border-top: 3px solid;
     width: 20px;

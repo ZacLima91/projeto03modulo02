@@ -34,10 +34,6 @@ export const filmes = connection.define(
       type: Sequelize.STRING,
       allowNull: true,
     },
-    iframe: {
-      type: Sequelize.STRING,
-      allowNull: true,
-    },
   },
   {
     freezeTableName: true,
